@@ -1,11 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    background-color: beige;
+    background-color: #EED2F5;
+    
 }
+
+header {
+    background-color: #F9C22E;
+    width: 0 auto;
+    height: 5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#imageLogo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 0%;
+    display: flex;
+    justify-content: start;
+}
+
+.comptor {
+    padding-top: 2rem;
+}
+
 html
 
 li {
 
+}
+
+.tache1{
+    border: solid 1px grey;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: 3rem 10rem 3rem 10rem;
+    min-width: 360px;
+    height: 2rem   ;
+}
+
+.delete{
+    display: flex;
+    justify-content: right ;
 }
 
 .card {
