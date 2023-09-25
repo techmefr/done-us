@@ -5,13 +5,13 @@ v0.2
 ajouter des tâches avec javascript
 
 v0.3
-stocker les données
-
-v0.4
 ajouter des états aux tâches (supprimé, finies, etc)
 
-v0.5
+v0.4
 ajouter des dossiers
+
+v0.5
+stocker les données
 
 v0.6
 ajouter une barre de progression et des sous-tâches
