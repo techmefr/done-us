@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Done Us - ToDo List</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <img class="logo" src="/ressources/Image PNG.png" alt="Logo Done Us">
+            <h1>Title</h1>
+            <div class="contact">
+                    <img src="/ressources/contactUs.png" alt="">
+            </div>
+        </nav>
+
+    </header>
+
     <main>
+        <div class="containerTasks">
+            <div class="titleContainerTasks">
+                <h2></h2>
+            </div>
+
+            <div class="tasksList">
+                <ul id="list">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="newTask">
+            <input type="text" id="inputText" placeholder="Veuillez insérer une nouvelle tâche !">
+            <button onclick="addTask()">Ajouter</button>
+        </div>
 
     </main>
 
 <script src="script.js"></script>
+
 </body>
 </html>

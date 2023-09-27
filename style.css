@@ -5,5 +5,52 @@
 
 body {
     background-color: #EED2F5;
-    
+
+}
+
+nav {
+background-color: aqua;
+border: solid 2px;
+display: flex;
+height: 50%;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.logo {
+background-color: red;
+border: solid 2px;
+border-radius: 70%;
+height: 20%;
+width: 20%;
+align-items: flex-start;
+
+}
+.contact {
+    height: 20%;
+
+}
+.contact img {
+    background-color: yellow;
+    border: solid 2px;
+    height: fit-content
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+.containerTasks {
+background-color: white;
+border: solid 2px;
+}
+
+.tasksList{
+background-color: blueviolet;
+border: solide 2px;
 }
