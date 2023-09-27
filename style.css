@@ -52,7 +52,7 @@ margin-top: 4vh;
 
 ul li {
     list-style: none;
-    font-size: 30px;
+    font-size: 20px;
     padding: 15px 10px 15px 50px;
     user-select: none;
     cursor: pointer;
@@ -60,11 +60,6 @@ ul li {
     
 }
 
-#list {
-    overflow: hidden;
-    overflow-y: scroll;
-    max-height: 700px;
-}
 
 ul li::before {
     content: '';
@@ -129,4 +124,30 @@ button {
     height: 5vh;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.containerTasks {
+    background-color: white;
+    width: 80%;
+    margin-top: 3vh;
+    border-radius: 5%;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+.carteUn {
+    display: flex;
+    justify-content: center;
+}
+
+.containerTasks h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;;
+}
+
+.carteDeux {
+    display: flex;
+    justify-content: center;
 }
