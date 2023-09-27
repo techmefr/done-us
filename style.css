@@ -4,36 +4,33 @@
 }
 
 body {
-    background-color: #EED2F5;
+    background: #E591FA;
 
 }
 
 nav {
-background-color: aqua;
-border: solid 2px;
+background-color:#F9C22E;
 display: flex;
-height: 50%;
+height: 11vh;
 justify-content: space-between;
 align-items: center;
-max-height: 10vh;
 }
+
 .logo {
-background-color: red;
-border: solid 2px;
 border-radius: 70%;
-height: 11vh;
-width: 11vh;
+height: 8vh;
+width: 8vh;
+margin-left: 1.5vh;
+margin-top: 0.5vh;
 align-items: flex-start;;
 
 }
-.contact {
-    height: 20%;
 
-}
-.contact img {
-    background-color: yellow;
-    border: solid 2px;
-    height: fit-content
+nav img {
+    height: 8vh;
+    width: 8vh;
+    margin-right: 1.5vh;
+    
 }
 
 h1 {
@@ -45,13 +42,12 @@ h2 {
 }
 
 .containerTasks {
-background-color: white;
-border: solid 2px;
+background-color: transparent;
 }
 
 .tasksList{
-background-color: blueviolet;
-border: solide 2px;
+background-color: transparent;
+margin-top: 4vh;
 }
 
 ul li {
@@ -62,6 +58,12 @@ ul li {
     cursor: pointer;
     position: relative;
     
+}
+
+#list {
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 700px;
 }
 
 ul li::before {
@@ -96,4 +98,35 @@ ul li span {
     line-height: 40px;
     text-align: center;
     border-radius: 50px;
+}
+
+.newTask {
+    background-color: #E591FA;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.3vh;
+    padding: 0px;
+}
+
+input {
+    height: 5vh;;
+    width: 35vh;
+    border: none;
+    outline: none;
+    background-color: #F9C22E;
+    border-radius: 30px;
+
+}
+
+button {
+    background-color: #eb6d1f;
+    width: 10vh;
+    height: 5vh;
+    border-radius: 30px;
+    cursor: pointer;
 }
