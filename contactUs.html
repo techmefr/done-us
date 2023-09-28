@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="imageContact">
     <header>
         <nav>
             <a href="/index.html"><img class="logo" src="/ressources/Image PNG.png" alt="Logo Done Us"></a>
@@ -17,8 +17,19 @@
         </nav>
 
     </header>
-
-   
+    <div id="contactUs">
+        <form id="contact">
+            <label for="name">Name :</label> <br/>
+            <input type="text"> <br/>
+            <label for="name">Surname :</label> <br/>
+            <input type="text"> <br/>
+            <label for="name">Email adress :</label> <br/>
+            <input type="text"> <br/>
+            <label for="message">Message :</label> <br/>
+            <textarea id="messageSize"> </textarea> <br/>
+            <button onclick="myFunction()">Submit</button>
+        </form>
+    </div>
 
 <script src="script.js"></script>
 

@@ -33,9 +33,12 @@ list.addEventListener("click", function (e) {
 function saveData () {
     localStorage.setItem("data", list.innerHTML);
 }
-
 function historyTasks () {
     list.innerHTML = localStorage.getItem("data");
 }
-
 historyTasks();
+
+function myFunction() {
+    alert("Votre message a bien été envoyé");
+    document.getElementById ("messageSent").innerHTML = "Message envoyé";
+}

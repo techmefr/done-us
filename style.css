@@ -116,6 +116,16 @@ input {
     padding-left: 20px;
 }
 
+textarea{
+    height: 5vh;;
+    width: 33vh;
+    border: none;
+    outline: none;
+    background-color: #F9C22E;
+    border-radius: 30px;
+    padding: 20px;
+}
+
 button {
     background-color: #eb6d1f;
     width: 10vh;
@@ -149,3 +159,38 @@ button {
     display: flex;
     justify-content: center;
 } */
+
+/* ~~~~~~~CONTACT US ~~~~~~*/
+
+#contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 60px;
+    padding: 60px;
+    gap: 0.2rem;
+
+}
+
+#contact #Submit {
+    margin-top: 2rem;
+}
+
+#imageContact {
+    background: url(ressources/background\ donuts.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+#messageSize {
+    height: 10rem;
+    overflow-wrap: break-word;
+}
