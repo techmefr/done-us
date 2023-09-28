@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-background-color:transparent;
+background-color:white;
 display: flex;
 height: 11vh;
 justify-content: space-between;
@@ -33,15 +33,7 @@ nav img {
     cursor: pointer;
 }
 
-.containerTasks {
-margin-top: 3rem;
-background-color: #EE5A9F;
-border-radius: 20px;
-max-width: 50rem;
-overflow: hidden;
-overflow-y: scroll;
-max-height: 200px;
-}
+
 
 .tasksList{
 background-color: transparent;
@@ -49,6 +41,7 @@ margin-top: 4vh;
 }
 
 ul li {
+    background-color: transparent;
     list-style: none;
     font-size: 20px;
     padding: 15px 10px 15px 50px;
@@ -60,6 +53,7 @@ ul li {
 
 
 ul li::before {
+    background-color: #C46F96;
     content: '';
     position: absolute;
     height: 30px;
@@ -98,12 +92,17 @@ ul li span {
     height: 50px;
     position: absolute;
     bottom: 3%;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 1.3vh;
     padding: 0px;
+    margin-left: 10%;
+}
+
+label {
+    font-weight: bold;
 }
 
 input {
@@ -111,7 +110,7 @@ input {
     width: 35vh;
     border: none;
     outline: none;
-    background-color: rgb(177, 177, 177);
+    background-color: white;
     border-radius: 30px;
     padding-left: 20px;
 }
@@ -125,7 +124,7 @@ input {
     border-radius: 40px 0px 0px 40px;
     border-top-style: none;
     outline: none;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 textarea{
@@ -155,15 +154,19 @@ button {
 }
 
 .containerTasks {
-    background-color: #EE5A9F;
     width: 80%;
-    margin-top: 1.5vh;
-    border-radius: 5%;
+    border-radius: 30px;
+    max-height:350px;
+    max-width: 50rem;
+    padding: 2rem;
+    margin: 60px 20px 170px 20px;   
     overflow: hidden;
     overflow-y: scroll;
-    max-height:500px;
-    padding: 2rem;
+    backdrop-filter: blur(1.5rem);
+    border: 3px solid #C46F96;
 }
+
+  
 
 .carteUn {
     display: flex;
@@ -191,14 +194,13 @@ button {
 }
 
 #contact {
+    backdrop-filter: blur(1.5rem);
+    border-radius: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px auto 60px;
-    padding: 60px;
-    gap: 0.2rem;
-
+    margin: 20px auto 90px;
 }
 
 #contact #Submit {
@@ -212,6 +214,19 @@ button {
 }
 
 #messageSize {
-    height: 10rem;
+    height: 6rem;
     overflow-wrap: break-word;
+}
+
+.navigation {
+    background-color: white;
+}
+
+.submitBtn {
+    text-decoration: none;
+    font-size: 14px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 2rem;
+    margin-bottom: 10px;
 }
