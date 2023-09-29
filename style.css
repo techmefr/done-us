@@ -168,6 +168,12 @@ button {
     background-color: #FEFEE3;
 }
 
+.professionalFolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   
 
 .carteUn {
