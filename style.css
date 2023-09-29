@@ -8,6 +8,11 @@ body {
     /*background-image: url(/ressources/background\ donuts.jpg);*/
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 nav {
 background-color:#FEFEE3;
 display: flex;
