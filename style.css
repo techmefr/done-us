@@ -111,7 +111,7 @@ input {
     width: 35vh;
     border: none;
     outline: none;
-    background-color: white;
+    background-color: #FEFEE3;
     border-radius: 30px;
     padding-left: 20px;
 }
@@ -218,10 +218,11 @@ button {
 #messageSize {
     height: 6rem;
     overflow-wrap: break-word;
+    background-color: #FEFEE3;
 }
 
 .navigation {
-    background-color: white;
+    background-color: FEFEE3;
 }
 
 .submitBtn {
