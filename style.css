@@ -4,16 +4,17 @@
 }
 
 body {
-    background: #FEFEE2;
-
+    background: #CCDBFD;
+    /*background-image: url(/ressources/background\ donuts.jpg);*/
 }
 
 nav {
-background-color:white;
+background-color:#FEFEE3;
 display: flex;
 height: 11vh;
 justify-content: space-between;
 align-items: center;
+box-shadow: 10px 5px 15px 1px grey;
 }
 
 .logo {
@@ -53,7 +54,7 @@ ul li {
 
 
 ul li::before {
-    background-color: #C46F96;
+    background-color: #CCDBFD;
     content: '';
     position: absolute;
     height: 30px;
@@ -120,7 +121,7 @@ input {
     height: 40px;
     float: left;   
     font: bold 13px 'ubuntu';
-    background: rgb(209, 209, 209);
+    background: #FEFEE3;
     border-radius: 40px 0px 0px 40px;
     border-top-style: none;
     outline: none;
@@ -162,8 +163,9 @@ button {
     margin: 60px 20px 170px 20px;   
     overflow: hidden;
     overflow-y: scroll;
-    backdrop-filter: blur(1.5rem);
-    border: 3px solid #C46F96;
+    /*backdrop-filter: blur(1.5rem);*/
+    box-shadow: 15px 15px 20px grey;
+    background-color: #FEFEE3;
 }
 
   
@@ -208,7 +210,6 @@ button {
 }
 
 #imageContact {
-    background: url(ressources/background\ donuts.jpg) no-repeat;
     background-size: cover;
     
 }
