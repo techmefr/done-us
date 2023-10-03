@@ -1,14 +1,359 @@
+/* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: beige;
-}
-html
-
-li {
-
+  background: #CCDBFD;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.card {
-
+html {
+  height: 100%;
+  width: 100%;
 }
 
+nav {
+  background-color: #FEFEE3;
+  display: flex;
+  height: 11vh;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 5px 15px 1px grey;
+}
+
+.logo {
+  border-radius: 70%;
+  height: 8vh;
+  width: 8vh;
+  margin-left: 1.5vh;
+  margin-top: 0.5vh;
+  align-items: flex-start;
+}
+
+nav img {
+  height: 8vh;
+  width: 8vh;
+  margin-right: 1.5vh;
+  cursor: pointer;
+}
+
+.tasksList {
+  background-color: transparent;
+  margin-top: 4vh;
+}
+
+ul li {
+  background-color: transparent;
+  list-style: none;
+  font-size: 20px;
+  padding: 15px 10px 15px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  background-color: #CCDBFD;
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url(ressources/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 15px;
+  left: 10px;
+}
+
+ul li.checked {
+  color: gray;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(ressources/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: blue;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.newTask {
+  background-color: transparent;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.3vh;
+  padding: 0px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  height: 5vh;
+  width: 35vh;
+  border: none;
+  outline: none;
+  background-color: #FEFEE3;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+
+#inputText {
+  width: 330px;
+  height: 40px;
+  float: left;
+  font: bold 13px 'ubuntu';
+  background: #FEFEE3;
+  border-radius: 40px 0px 0px 40px;
+  border-top-style: none;
+  outline: none;
+  padding-left: 1rem;
+}
+
+textarea {
+  height: 5vh;
+  width: 33vh;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+button {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  min-width: 5em;
+  width: 6em;
+  height: 40px;
+  text-align: center;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 0px 2rem 2rem 0px;
+}
+
+.containerTasks {
+  width: 80%;
+  border-radius: 30px;
+  max-height: 350px;
+  max-width: 50rem;
+  padding: 2rem;
+  margin: 60px 20px 170px 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  box-shadow: 15px 15px 20px grey;
+  background-color: #FEFEE3;
+}
+
+.professionalFolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carteUn {
+  display: flex;
+  justify-content: center;
+}
+
+.containerTasks h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  position: absolute;
+}
+
+/* ~~~~~~~CONTACT US ~~~~~~ */
+
+#contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  backdrop-filter: blur(1.5rem);
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 90px;
+}
+
+#contact #Submit {
+  margin-top: 2rem;
+}
+
+#imageContact {
+  background-size: cover;
+}
+
+#messageSize {
+  height: 6rem;
+  overflow-wrap: break-word;
+  background-color: #FEFEE3;
+}
+
+.navigation {
+  background-color: #FEFEE3;
+}
+
+.submitBtn {
+  text-decoration: none;
+  font-size: 14px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Styles spécifiques pour les nouvelles fonctionnalités */
+
+/* Styles pour les cartes avec un titre fixe */
+.card-title {
+  position: sticky;
+  top: 0;
+  background-color: #FEFEE3;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.card-content {
+  margin-top: 2rem; /* Ajustez la marge en fonction de vos besoins */
+}
+
+.containerTasks {
+  width: 80%;
+  border-radius: 30px;
+  max-width: 50rem;
+  margin: 20px auto;
+  overflow: hidden;
+  overflow-y: scroll;
+  box-shadow: 15px 15px 20px grey;
+  background-color: #FEFEE3;
+}
+
+/* Réglages spécifiques pour le texte dans les cartes */
+.containerTasks h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  position: absolute;
+}
+
+/* Styles pour le bouton radial menu */
+.radial-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.radial-menu.open {
+  display: block;
+}
+
+.radial-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.radial-menu li {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.radial-menu li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+.radial-menu li button.edit {
+  color: #007bff;
+}
+
+.radial-menu li button.delete {
+  color: #ff0000;
+}
+
+.radial-menu li button.urgent {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* Styles pour les icônes en CSS */
+.icon-folder:before {
+  content: "\f07c"; /* Code Unicode pour une icône de dossier */
+  font-family: FontAwesome;
+  font-size: 24px;
+}
+
+.icon-menu:before {
+  content: "\f0c9"; /* Code Unicode pour une icône de menu */
+  font-family: FontAwesome;
+  font-size: 24px;
+}
+
+/* Styles pour l'effet de placeholder adaptatif */
+.adaptive-placeholder(@height, @radius, @margin: 1em, @border: 1px) {
+  /* ... (votre code pour l'effet de placeholder adaptatif) ... */
+}
+
+/* Styles pour le bouton "Add" */
+.button-add {
+  background-color: #03a9f4;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-add:hover {
+  background-color: #007bff;
+}

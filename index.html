@@ -1,46 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Done Us - ToDo List</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body id="imageContact">
     <header>
-<img>
+        <nav>
+            <a href="/index.html"><img class="logo" src="/ressources/Image PNG.png" alt="Logo Done Us"></a>
+            <h1>Done Us</h1>
+            <div class="contact">
+                <a href="contactUs.html"><img src="/ressources/contactUs.png" alt=""></a>
+            </div>
+        </nav>
     </header>
 
-    <div .compt>
+    <main class="card-container">
+        <!-- Carte 1 -->
+        <section class="carte">
+            <h2 class="card-title">Titre de la carte 1</h2>
+            <div class="tasksList">
+                <ul>
+                    <!-- Tâches de la carte 1 -->
+                    <li>Tâche 1</li>
+                    <li>Tâche 2</li>
+                    <!-- Ajoutez d'autres tâches si nécessaire -->
+                </ul>
+            </div>
+        </section>
 
-    </div>
-    <div .tasks>
-        <div>
-            <ul>
-                <Li>
-                    <checkbox></checkbox>
-                    <p .todo>à faire</p>
-                    <button .radialMenu></button>
-                    <button .edit></button>
-                    <button .bin></button>
-                    </button>
-                </Li>
-                <li>
-                    <p>finie</p>
-                </li>
-                <li><p>supprimée</p></li>
-                <li><p>urgente !!!!</p></li>
-                <li><p>reportée</p></li>
-            </ul
+        <!-- Carte 2 -->
+        <section class="carte">
+            <h2 class="card-title">Titre de la carte 2</h2>
+            <div class="tasksList">
+                <ul>
+                    <!-- Tâches de la carte 2 -->
+                    <li>Tâche 1</li>
+                    <li>Tâche 2</li>
+                    <!-- Ajoutez d'autres tâches si nécessaire -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Ajoutez d'autres cartes de la même manière si nécessaire -->
+    </main>
+
+    <div class="newTask">
+        <input type="text" id="inputText" placeholder="Please, insert a new task !" class="folder-input">
+        <button id="addButton" onclick="addTask()" class="clickable-button">Add</button>
+        <div class="folder-selector" id="taskCardSelector">
+            <img src="votre_icone_dossier.png" alt="Folder Icon">
+            <select>
+                <option value="nouvelleCarte">Créer une nouvelle liste</option>
+                <!-- Ajoutez ici les options existantes -->
+            </select>
         </div>
     </div>
 
-
-    /* partie pour ajouter une tâche avec un input text et un button add*/
-
-    <div .adder> 
-        <input>
-        <button .addTask>
-        </button>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
