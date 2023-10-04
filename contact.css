@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #CCDBFD;
+    /*background-image: url(/ressources/background\ donuts.jpg);*/
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+background-color:#FEFEE3;
+display: flex;
+height: 11vh;
+justify-content: space-between;
+align-items: center;
+box-shadow: 10px 5px 15px 1px grey;
+}
+
+.logo {
+border-radius: 70%;
+height: 8vh;
+width: 8vh;
+margin-left: 1.5vh;
+margin-top: 0.5vh;
+align-items: flex-start;;
+
+}
+
+#contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact {
+    backdrop-filter: blur(1.5rem);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 90px;
+
+
+input {
+    height: 5vh;;
+    width: 35vh;
+    border: none;
+    outline: none;
+    background-color: #FEFEE3;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+#contact #Submit {
+    margin-top: 2rem;
+}
+
+#imageContact {
+    background-size: cover;
+    
+}
+
+#messageSize {
+    height: 6rem;
+    overflow-wrap: break-word;
+    background-color: #FEFEE3;
+}
+
+.submitBtn {
+    text-decoration: none;
+    font-size: 14px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 2rem;
+    margin-bottom: 10px;
+}
+.navigation {
+    background-color: FEFEE3;
+}
+
+    
