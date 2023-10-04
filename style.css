@@ -39,172 +39,28 @@ nav img {
     cursor: pointer;
 }
 
-
-
-.task-list .tasksList{
-background-color: transparent;
-margin-top: 4vh;
-}
-
-ul li {
-    background-color: transparent;
-    list-style: none;
-    font-size: 20px;
-    padding: 15px 10px 15px 50px;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-    
-}
-
-
-ul li::before {
-    background-color: #CCDBFD;
-    content: '';
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-image: url(ressources/unchecked.png);
-    background-size: cover ;
-    background-position: center ;
-    top: 15px;
-    left: 10px;
-}
-ul li.checked {
-    color: gray;
-    text-decoration:line-through;
-}
-
-ul li.checked::before {
-    background-image: url(ressources/checked.png);
-}
-
-ul li span {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 40px;
-    color: blue;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50px;
-}
-
-.newTask {
-    background-color: transparent;
-    height: 50px;
-    position: absolute;
-    bottom: 3%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1.3vh;
-    padding: 0px;
-    margin-left: 10%;
-}
-
-label {
-    font-weight: bold;
-}
-
-input {
-    height: 5vh;;
-    width: 35vh;
-    border: none;
-    outline: none;
-    background-color: #FEFEE3;
-
-    padding-left: 20px;
-}
-
-#inputText{
-    width: 330px;
-    height: 40px;
-    float: left;   
-    font: bold 13px 'ubuntu';
-    background: #FEFEE3;
-    border-top-style: none;
-    outline: none;
-    padding-left: 1rem;
-}
-
-textarea{
-    height: 5vh;;
-    width: 33vh;
-    border: none;
-    outline: none;
+.task-list {
+    display: flex-wap;
+    overflow: auto;
     background-color: white;
-    border-radius: 30px;
-    padding: 20px;
+    border-radius: 1rem;
+    min-height: 2vh;
+    max-height: 25vh;
+    min-width: 200px;
+    max-width: 50%;
+    margin: 5%;
 }
 
-button {
-    text-decoration: none;
-    position: relative;
-    border: none;
-    font-size: 14px;
-    font-family: inherit;
-    color: #fff;
-    min-width: 5em;
-    width: 6em;
-    height: 40px;
-    text-align: center;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 300%;
-    border-radius: 0px 2rem 2rem 0px;
-}
-#taskCardSelector {
-    text-decoration: none;
-    position: relative;
-    border: none;
-    font-size: 14px;
-    font-family: inherit;
-    color: #fff;
-    min-width: 5em;
-    width: 6em;
-    height: 40px;
-    text-align: center;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 300%;
-    border-radius: 2rem 0px 0px 2rem;
-}
+ h2{
+    border-color: brown;
+    border: solid;
+    margin-left: 2%;
+ }
 
-.containerTasks {
-    width: 80%;
-    border-radius: 30px;
-    max-height:350px;
-    max-width: 50rem;
-    padding: 2rem;
-    margin: 60px 20px 170px 20px;   
-    overflow: hidden;
-    overflow-y: scroll;
-    /*backdrop-filter: blur(1.5rem);*/
-    box-shadow: 15px 15px 20px grey;
-    background-color: #FEFEE3;
-}
-
-.professionalFolder {
+li {
+    overflow: auto;
+    margin-top: 1%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 2%;
+    padding-bottom: 2%;
 }
-
-  
-
-.carteUn {
-    display: flex;
-    justify-content: center;
-}
-
-.containerTasks h2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 1vh;;
-    position: absolute;
-}
-
-
