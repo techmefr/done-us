@@ -41,7 +41,7 @@ nav img {
 
 
 
-.tasksList{
+.task-list .tasksList{
 background-color: transparent;
 margin-top: 4vh;
 }
@@ -258,3 +258,5 @@ button {
     border-radius: 2rem;
     margin-bottom: 10px;
 }
+
+/* ICI JE METS DU CSS AVEC MON TEST */

@@ -19,50 +19,39 @@
 
     </header>
 
-    <section class="carteUn">
-
-        <div class="containerTasks">
-            <div class="professionalFolder"><h2>Professional</h2></div>
-            <div class="titleContainerTasks">
-                <h2></h2>
-            </div>
-
-            <div class="tasksList">
-                <ul id="list">
-                 </ul>
-            </div>
+    <div class="todo-app">
+        <div class="task-input">
+            <input type="text" id="task" placeholder="Ajouter une tâche">
+            <button id="addTask">Ajouter</button>
+            <select id="taskCategory">
+            </select>
+        <div class="new-folder">
+            <input type="text" id="newFolderName" placeholder="Nom du dossier">
+            <button id="createFolder">Créer un dossier</button>
         </div>
-
-    </section>
-
-    <!-- <section class="carteDeux">
-
-        <div class="containerTasks">
-            <h2>Perso</h2>
-            <div class="titleContainerTasks">
-                <h2></h2>
-            </div>
-
-            <div class="tasksList">
-                <ul id="list">
-                </ul>
-            </div>
-        </div>
-
-    </section> -->
-
-        <div class="newTask">
-            <!-- <select id="taskCardSelector">
-                <option value="nouvelleCarte">Créer une nouvelle liste</option>
-                <option value="carteUn">Professional</option>
-                <option value="carteDeux">Personal</option>
-              </select> -->
-            <input type="text" id="inputText" placeholder="Please, insert a new task !">
-            <button onclick="addTasks()">Add</button>
-        </div>
-
+    </div>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+
+<!-- LImite -->
+
+    <!-- <div class="containerTasks">
+        <div class="professionalFolder"><h2>Professional</h2></div>
+        <div class="titleContainerTasks">
+            <h2></h2>
+        </div>
+
+        <div class="tasksList">
+            <ul id="list">
+             </ul>
+        </div>
+    </div>
+
+
+    <div class="newTask">
+        <input type="text" id="inputText" placeholder="Please, insert a new task !">
+        <button onclick="addTasks()">Add</button>
+    </div> -->
