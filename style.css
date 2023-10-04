@@ -148,6 +148,12 @@ button {
     border-radius: 0px 2rem 2rem 0px;
 }
 
+ ul{
+    overflow-y: hidden;
+    overflow:scroll;
+    max-height: 200px;
+}
+
 
 
 
