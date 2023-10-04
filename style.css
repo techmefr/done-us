@@ -6,6 +6,7 @@
 }
 
 body {
+   
     background: #CCDBFD;
 }
 
@@ -26,6 +27,7 @@ box-shadow: 10px 5px 15px 1px grey;
 }
 
 .logo {
+transition: transform .4s;
 border-radius: 70%;
 height: 8vh;
 width: 8vh;
@@ -34,82 +36,30 @@ margin-top: 0.5vh;
 align-items: flex-start;;
 }
 
+.logo:hover {
+-ms-transform: scale(1.2);
+-webkit-transform: scale(1.2); 
+transform: scale(1.2);
+}
+
 nav img {
+    transition: transform .4s;
     height: 8vh;
     width: 8vh;
     margin-right: 1.5vh;
     cursor: pointer;
 }
 
+nav img:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2);
+}
+
 /* BODY CSS STYLE */
 
 .todo-app {
-    border: 3px solid black;
-}
-
-.task-input {
     border: 3px solid transparent;
-    background-color: transparent;
-    bottom: 3%;
-    width: 80%;
-    /* flex-wrap: wrap; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-}
-
-#task {
-    border: 3px solid transparent;
-    width: 8rem;
-    height: 50px;
-    float: left;   
-    font: bold 13px 'ubuntu';
-    background: #FEFEE3;
-    border-top-style: none;
-    outline: none;
-    padding-left: 1rem;
-    border-radius: 2rem 0px 0px 2rem;
-}
-
-#newFolderName {
-    border: 3px solid violet;
-    width: 8rem;
-    height: 50px;
-    float: left;   
-    font: bold 13px 'ubuntu';
-    background: #FEFEE3;
-    border-top-style: none;
-    outline: none;
-    padding-left: 1rem;
-    border-radius: 2rem;
-    margin-right: 10;
-    border-radius: 2rem 0px 0px 2rem;
-}
-
-#addTask {
-    border: 3px solid transparent;
-}
-
-.categoryList{
-    border: 3px solid black;
-}
-
-#taskCategory {
-    border: 3px solid yellow;
-}
-
-.new-folder {
-    border: 3px solid red;
-    background-color: transparent;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#createFolder {
-    border: 3px solid blue;
 }
 
 .globalContainer {
@@ -118,14 +68,87 @@ nav img {
     height: 50px;
     position: absolute;
     bottom: 3%;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1.3vh;
     padding: 0px;
-    margin-left: 10%;
     flex-direction: column;
+}
+
+.task-input {
+    border: 3px solid transparent;
+    background-color: transparent;
+    bottom: 3%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-right: 1rem;
+}
+
+#task {
+    border: 3px solid transparent;
+    width: 70vw;
+    height: 50px;
+    float: left;   
+    font: bold 13px 'ubuntu';
+    background: #FEFEE3;
+    border-top-style: none;
+    outline: none;
+    padding-left: 1rem;
+    border-radius: 2rem 0px 0px 2rem;
+    box-sizing: border-box;
+}
+
+#newFolderName {
+    border: 3px solid transparent;
+    width: 70vw;
+    height: 50px;
+    float: left;   
+    font: bold 13px 'ubuntu';
+    background: #FEFEE3;
+    border-top-style: none;
+    outline: none;
+    padding-left: 1rem;
+    border-radius: 2rem 0px 0px 2rem;
+    box-sizing: border-box;
+}
+
+#addTask {
+    border: 3px solid transparent;
+}
+
+.categoryList{
+    border: 3px solid transparent;
+    margin: 0.3rem;
+    margin-right: 1rem;
+
+}
+
+#taskCategory {
+    border: 3px solid transparent;
+    width: 50vw;
+    padding-left: 0.5rem;
+    border-radius: 1rem;
+    background-color: #FEFEE3;
+    font: bold 13px 'ubuntu';
+}
+
+.new-folder {
+    border: 3px solid transparent;
+    background-color: transparent;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+#createFolder {
+    border: 3px solid transparent;
 }
 
 label {
@@ -146,6 +169,62 @@ button {
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 300%;
     border-radius: 0px 2rem 2rem 0px;
+    cursor: pointer;
+}
+
+span {
+    position: relative;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: blue;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+span:hover {
+    background-color: yellow;
+}
+
+.task-list {
+    display: flex-wrap;
+    overflow: auto;
+    background-color: white;
+    border-radius: 1rem;
+    min-height: 4vh;
+    max-height: 25vh;
+    min-width: 80%;
+    max-width: 50%;
+    margin: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.task-list h2 {
+    border: 2px solid black;
+}
+
+ h2 {
+    background-color: white;
+    width: 50%;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+ }
+
+li {
+ 
+    margin:0;
+    display: flex;
+    margin-left: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
  ul{
@@ -155,5 +234,85 @@ button {
 }
 
 
+/* MEDIA QUERIES */
+
+@media screen and (min-width:600px) {
+
+    .globalContainer {
+    border: 3px solid transparent;
+    background-color: transparent;
+    height: 50px;
+    position: absolute;
+    bottom: 3%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1.3vh;
+    padding: 0px;
+    margin-left: 10%;
+    flex-direction: row;
+    };
 
 
+.task-input {
+    border: 3px solid red;
+    margin: 0;
+    background-color: transparent;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.new-folder {
+    border: 3px solid blue;
+    background-color: transparent;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#taskCategory {
+    border: 3px solid transparent;
+    height: 2rem;
+    width: 10rem;
+    padding-left: 0.5rem;
+    border-radius: 1rem;
+    background-color: #FEFEE3;
+    font: bold 13px 'ubuntu';
+}
+
+#task {
+    border: 3px solid transparent;
+    width: 20vw;
+    height: 50px;
+    float: left;   
+    font: bold 13px 'ubuntu';
+    background: #FEFEE3;
+    border-top-style: none;
+    outline: none;
+    padding-left: 1rem;
+    border-radius: 2rem 0px 0px 2rem;
+}
+
+#newFolderName {
+    border: 3px solid transparent;
+    width: 20vw;
+    height: 50px;
+    float: left;   
+    font: bold 13px 'ubuntu';
+    background: #FEFEE3;
+    border-top-style: none;
+    outline: none;
+    padding-left: 1rem;
+    border-radius: 2rem;
+    margin-right: 10;
+    border-radius: 2rem 0px 0px 2rem;
+}
+};

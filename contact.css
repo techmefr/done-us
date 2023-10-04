@@ -23,6 +23,7 @@ box-shadow: 10px 5px 15px 1px grey;
 }
 
 .logo {
+transition: transform .4s;
 border-radius: 70%;
 height: 8vh;
 width: 8vh;
@@ -31,6 +32,12 @@ margin-top: 0.5vh;
 align-items: flex-start;;
 
 }
+    
+.logo:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2);
+    }
 
 #contactUs {
     display: flex;
@@ -46,7 +53,8 @@ align-items: flex-start;;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px auto 90px;
+    margin: 40px auto 90px;
+    gap:0.5rem;
 }
 
 input {
@@ -57,6 +65,7 @@ input {
     background-color: #FEFEE3;
     border-radius: 30px;
     padding-left: 20px;
+    box-shadow: 10px 5px 15px 1px grey;
 }
 
 #contact #Submit {
@@ -69,18 +78,34 @@ input {
 }
 
 #messageSize {
-    height: 6rem;
     overflow-wrap: break-word;
     background-color: #FEFEE3;
+    height: 15vh;;
+    width: 35vh;
+    border: none;
+    outline: none;
+    background-color: #FEFEE3;
+    border-radius: 30px;
+    padding-left: 20px;
+    box-shadow: 10px 5px 15px 1px grey;
 }
 
 .submitBtn {
     text-decoration: none;
+    position: relative;
+    border: none;
     font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    min-width: 5em;
+    width: 6em;
+    height: 50px;
+    text-align: center;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 300%;
     border-radius: 2rem;
-    margin-bottom: 10px;
+    margin-top:1.8rem;
+    cursor: pointer;
 }
 .navigation {
     background-color: FEFEE3;
