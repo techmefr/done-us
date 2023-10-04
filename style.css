@@ -6,6 +6,7 @@
 }
 
 body {
+   
     background: #CCDBFD;
 }
 
@@ -206,65 +207,97 @@ span:hover {
     margin-left: 10%;
     flex-direction: row;
     };
+    
+.task-list {
+    display: flex-wrap;
+    overflow: auto;
+    background-color: white;
+    border-radius: 1rem;
+    min-height: 4vh;
+    max-height: 25vh;
+    min-width: 80%;
+    max-width: 50%;
+    margin: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
 
-    .task-input {
-        border: 3px solid red;
-        margin: 0;
-        background-color: transparent;
-        width: 20rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        width: 100%;
-    }
+ h2{
+    background-color: white;
+    width: 50%;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+   padding-left: 30%;
+ }
 
-    .new-folder {
-        border: 3px solid blue;
-        background-color: transparent;
-        width: 20rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        width: 100%;
-    }
+li {
+ 
+    margin-top: 5%;
+    display: flex;
+    margin-left: 2%;
+    padding-bottom: 2%;
+}
 
-    #taskCategory {
-        border: 3px solid transparent;
-        height: 2rem;
-        width: 10rem;
-        padding-left: 0.5rem;
-        border-radius: 1rem;
-        background-color: #FEFEE3;
-        font: bold 13px 'ubuntu';
-    }
+.task-input {
+    border: 3px solid red;
+    margin: 0;
+    background-color: transparent;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
 
-    #task {
-        border: 3px solid transparent;
-        width: 20vw;
-        height: 50px;
-        float: left;   
-        font: bold 13px 'ubuntu';
-        background: #FEFEE3;
-        border-top-style: none;
-        outline: none;
-        padding-left: 1rem;
-        border-radius: 2rem 0px 0px 2rem;
-    }
+.new-folder {
+    border: 3px solid blue;
+    background-color: transparent;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
 
-    #newFolderName {
-        border: 3px solid transparent;
-        width: 20vw;
-        height: 50px;
-        float: left;   
-        font: bold 13px 'ubuntu';
-        background: #FEFEE3;
-        border-top-style: none;
-        outline: none;
-        padding-left: 1rem;
-        border-radius: 2rem;
-        margin-right: 10;
-        border-radius: 2rem 0px 0px 2rem;
-    }
+#taskCategory {
+    border: 3px solid transparent;
+    height: 2rem;
+    width: 10rem;
+    padding-left: 0.5rem;
+    border-radius: 1rem;
+    background-color: #FEFEE3;
+    font: bold 13px 'ubuntu';
+}
+
+#task {
+    border: 3px solid transparent;
+    width: 20vw;
+    height: 50px;
+    float: left;   
+    font: bold 13px 'ubuntu';
+    background: #FEFEE3;
+    border-top-style: none;
+    outline: none;
+    padding-left: 1rem;
+    border-radius: 2rem 0px 0px 2rem;
+}
+
+#newFolderName {
+    border: 3px solid transparent;
+    width: 20vw;
+    height: 50px;
+    float: left;   
+    font: bold 13px 'ubuntu';
+    background: #FEFEE3;
+    border-top-style: none;
+    outline: none;
+    padding-left: 1rem;
+    border-radius: 2rem;
+    margin-right: 10;
+    border-radius: 2rem 0px 0px 2rem;
 }
