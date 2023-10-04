@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         taskInput.value = "";
+        saveData ();
     });
 
     const newFolderNameInput = document.getElementById("newFolderName");
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
         option.textContent = folderTitle.textContent;
         selectElement.appendChild(option);
     });
+    saveData ();
 });
 
 // SAVES

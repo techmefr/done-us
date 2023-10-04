@@ -47,7 +47,7 @@ align-items: flex-start;;
     justify-content: center;
     align-items: center;
     margin: 20px auto 90px;
-
+}
 
 input {
     height: 5vh;;
@@ -86,4 +86,6 @@ input {
     background-color: FEFEE3;
 }
 
-    
+label {
+    font-weight: bold;
+}

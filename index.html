@@ -20,14 +20,24 @@
     </header>
 
     <div class="todo-app">
-        <div class="task-input">
-            <input type="text" id="task" placeholder="Ajouter une tâche">
-            <button id="addTask">Ajouter</button>
-            <select id="taskCategory">
-            </select>
-        <div class="new-folder">
-            <input type="text" id="newFolderName" placeholder="Nom du dossier">
-            <button id="createFolder">Créer un dossier</button>
+        <div class="globalContainer">
+            <div class="new-folder">
+                <input type="text" id="newFolderName" placeholder="Folder's Name">
+                <button id="createFolder">New Folder</button>
+            </div>
+            <div class="categoryList">
+                <select id="taskCategory"></select>
+            </div>
+            <div class="task-input">
+                <div>
+                    <input type="text" id="task" placeholder="Add New Task">
+                </div>
+                <div>
+                    <button id="addTask">Add</button>
+                </div>
+
+            </div>
+
         </div>
     </div>
 
