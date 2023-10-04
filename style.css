@@ -4,6 +4,7 @@
 }
 
 body {
+   
     background: #CCDBFD;
     /*background-image: url(/ressources/background\ donuts.jpg);*/
 }
@@ -40,27 +41,42 @@ nav img {
 }
 
 .task-list {
-    display: flex-wap;
+    display: flex-wrap;
     overflow: auto;
     background-color: white;
     border-radius: 1rem;
-    min-height: 2vh;
+    min-height: 4vh;
     max-height: 25vh;
-    min-width: 200px;
+    min-width: 80%;
     max-width: 50%;
     margin: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: red;
 }
 
  h2{
-    border-color: brown;
-    border: solid;
-    margin-left: 2%;
+    background-color: white;
+    width: 50%;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+   padding-left: 30%;
  }
 
 li {
-    overflow: auto;
-    margin-top: 1%;
+ 
+    margin-top: 5%;
     display: flex;
     margin-left: 2%;
     padding-bottom: 2%;
+}
+
+
+
+.task-input {
+    margin-bottom: 0;
+
+
 }
