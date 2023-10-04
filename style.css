@@ -188,6 +188,46 @@ span:hover {
     background-color: yellow;
 }
 
+.task-list {
+    display: flex-wrap;
+    overflow: auto;
+    background-color: white;
+    border-radius: 1rem;
+    min-height: 4vh;
+    max-height: 25vh;
+    min-width: 80%;
+    max-width: 50%;
+    margin: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.task-list h2 {
+    border: 2px solid black;
+}
+
+ h2 {
+    background-color: white;
+    width: 50%;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+ }
+
+li {
+ 
+    margin:0;
+    display: flex;
+    margin-left: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width:600px) {
@@ -207,39 +247,7 @@ span:hover {
     margin-left: 10%;
     flex-direction: row;
     };
-    
-.task-list {
-    display: flex-wrap;
-    overflow: auto;
-    background-color: white;
-    border-radius: 1rem;
-    min-height: 4vh;
-    max-height: 25vh;
-    min-width: 80%;
-    max-width: 50%;
-    margin: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    color: red;
-}
 
- h2{
-    background-color: white;
-    width: 50%;
-    font-size: xx-large;
-    color: rgb(0, 0, 0);
-   padding-left: 30%;
- }
-
-li {
- 
-    margin-top: 5%;
-    display: flex;
-    margin-left: 2%;
-    padding-bottom: 2%;
-}
 
 .task-input {
     border: 3px solid red;
@@ -301,3 +309,4 @@ li {
     margin-right: 10;
     border-radius: 2rem 0px 0px 2rem;
 }
+};
