@@ -62,25 +62,24 @@ document.addEventListener("DOMContentLoaded", function () {
     newTaskListDiv.classList.add("task-list");
     newTaskListDiv.id = folderName + "Tasks";
 
-        // Début de la fonction pour supprimer les catégories
+        const folderTitle = document.createElement("h2");
+        folderTitle.textContent = newFolderNameInput.value.trim();
 
         let span = document.createElement("span");
         span.innerHTML="\u00d7";
-        newTaskListDiv.appendChild(span);
+        folderTitle.appendChild(span);
 
         span.addEventListener ("click", function (e) {
             if (e.target.tagName === "SPAN") {
-                e.target.parentElement.remove();
+                e.target.parentElement.parentElement.remove();
                 saveData();
             }
         }, false);
 
-         // Fin de la fonction pour supprimer les catégories
-
-        const folderTitle = document.createElement("h2");
-        folderTitle.textContent = newFolderNameInput.value.trim();
-
-        const folderTaskList = document.createElement("ul");
+    
+    const folderTaskList = document.createElement("ul");
+    folderTaskList.id = "list";
+    const list = document.getElementById("list");
         
 
     newTaskListDiv.appendChild(folderTitle);
