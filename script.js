@@ -13,46 +13,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const taskItem = document.createElement("li");
     taskItem.textContent = taskText;
 
-        // Début de la fonction pour supprimer les tâches
+    const taskDiv = document.createElement("div");
+    taskDiv.appendChild(taskItem);
 
-        let span = document.createElement("span");
-        span.innerHTML="\u00d7";
-        taskItem.appendChild(span);
+    const customFolderName = category.trim();
+    const customFolderList = document.getElementById(
+      customFolderName + "Tasks"
+    );
+    if (customFolderList) {
+      const taskListDiv = customFolderList.querySelector("ul");
+      taskListDiv.appendChild(taskDiv);
+    } else {
+      alert("Le dossier personnalisé n'existe pas.");
+    }
 
-        span.addEventListener ("click", function (e) {
-            if (e.target.tagName === "SPAN") {
-                e.target.parentElement.remove();
-                saveData();
-            }
-            saveData ()
-        }, false);
+    taskInput.value = "";
+  });
 
-        // Fin de la fonction pour supprimer les tâches
-
-        const taskDiv = document.createElement("div");
-        taskDiv.appendChild(taskItem);  
-
-        const customFolderName = category.trim();
-        const customFolderList = document.getElementById(customFolderName + "Tasks");
-        if (customFolderList) {
-            const taskListDiv = customFolderList.querySelector("ul");
-            taskListDiv.appendChild(taskDiv);
-            taskInput.value = "";
-            saveData ();
-        } else {
-            alert("Le dossier personnalisé n'existe pas.");
-            saveData ();
-        }
-
-        taskInput.value = "";
-        saveData ();
-    });
-
-    
-        
-    const newFolderNameInput = document.getElementById("newFolderName");
-    const createFolderButton = document.getElementById("createFolder");
-    const selectElement = document.getElementById("taskCategory");
+  const newFolderNameInput = document.getElementById("newFolderName");
+  const createFolderButton = document.getElementById("createFolder");
+  const selectElement = document.getElementById("taskCategory");
 
   createFolderButton.addEventListener("click", function () {
     const folderName = newFolderNameInput.value.trim().toLowerCase();
@@ -62,26 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
     newTaskListDiv.classList.add("task-list");
     newTaskListDiv.id = folderName + "Tasks";
 
-        // Début de la fonction pour supprimer les catégories
+    const folderTitle = document.createElement("h2");
+    folderTitle.textContent = newFolderNameInput.value.trim();
 
-        let span = document.createElement("span");
-        span.innerHTML="\u00d7";
-        newTaskListDiv.appendChild(span);
-
-        span.addEventListener ("click", function (e) {
-            if (e.target.tagName === "SPAN") {
-                e.target.parentElement.remove();
-                saveData();
-            }
-        }, false);
-
-         // Fin de la fonction pour supprimer les catégories
-
-        const folderTitle = document.createElement("h2");
-        folderTitle.textContent = newFolderNameInput.value.trim();
-
-        const folderTaskList = document.createElement("ul");
-        
+    const folderTaskList = document.createElement("ul");
 
     newTaskListDiv.appendChild(folderTitle);
     newTaskListDiv.appendChild(folderTaskList);
@@ -90,13 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     newFolderNameInput.value = "";
 
-        const option = document.createElement("option");
-        option.value = folderName;
-        option.textContent = folderTitle.textContent;
-        selectElement.appendChild(option);
-
-    });
-    saveData ();
+    const option = document.createElement("option");
+    option.value = folderName;
+    option.textContent = folderTitle.textContent;
+    selectElement.appendChild(option);
+  });
 });
 
 // SAVES
@@ -112,4 +74,9 @@ historyTasks();
 function myFunction() {
   alert("Votre message a bien été envoyé");
 }
+
+saveData();
+
+
+//les button 
 
