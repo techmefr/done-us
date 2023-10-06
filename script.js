@@ -22,9 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         span.addEventListener ("click", function (e) {
             if (e.target.tagName === "SPAN") {
                 e.target.parentElement.remove();
-                saveData();
             }
-            saveData ()
         }, false);
 
         // Fin de la fonction pour supprimer les tâches
@@ -38,14 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const taskListDiv = customFolderList.querySelector("ul");
             taskListDiv.appendChild(taskDiv);
             taskInput.value = "";
-            saveData ();
         } else {
             alert("Le dossier personnalisé n'existe pas.");
-            saveData ();
         }
 
         taskInput.value = "";
-        saveData ();
     });
 
     
@@ -72,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
         span.addEventListener ("click", function (e) {
             if (e.target.tagName === "SPAN") {
                 e.target.parentElement.parentElement.remove();
-                saveData();
             }
         }, false);
 
@@ -93,22 +87,20 @@ document.addEventListener("DOMContentLoaded", function () {
         option.value = folderName;
         option.textContent = folderTitle.textContent;
         selectElement.appendChild(option);
-
     });
-    saveData ();
 });
 
 // SAVES
 
-function saveData() {
-  localStorage.setItem("data", list.innerHTML);
-}
-function historyTasks() {
-  list.innerHTML = localStorage.getItem("data");
-}
-historyTasks();
+// function saveData() {
+//   localStorage.setItem("data", list.innerHTML);
+// }
+// function historyTasks() {
+//   list.innerHTML = localStorage.getItem("data");
+// }
+// historyTasks();
 
-function myFunction() {
-  alert("Votre message a bien été envoyé");
-}
+// function myFunction() {
+//   alert("Votre message a bien été envoyé");
+// }
 
