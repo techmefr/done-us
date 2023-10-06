@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Début de la fonction pour supprimer les tâches
 
         let span = document.createElement("span");
-        span.innerHTML="\u00d7";
+        span.innerHTML="🗑️";
         taskItem.appendChild(span);
 
         span.addEventListener ("click", function (e) {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Début de la fonction pour supprimer les catégories
 
         let span = document.createElement("span");
-        span.innerHTML="\u00d7";
+        span.innerHTML="🗑️";
         newTaskListDiv.appendChild(span);
 
         span.addEventListener ("click", function (e) {

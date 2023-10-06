@@ -184,9 +184,6 @@ span {
     text-align: center;
     border-radius: 50px;
 }
-span:hover {
-    background-color: yellow;
-}
 
 .task-list {
     display: flex-wrap;
@@ -206,7 +203,7 @@ span:hover {
 }
 
 .task-list h2 {
-    border: 2px solid black;
+    border: 2px solid transparent;
 }
 
  h2 {
